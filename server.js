@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 // Simple in-memory datastore
-if(!process.env.TEST_RECIPIENT || !process.env.TEST_SENDER || !process.env.SMTP_LOGIN || !process.env.SMTP_PASSW){
+if(!process.env.SMTP_LOGIN || !process.env.SMTP_PASSW){
   var comments = [
       {
           "id": 1388534400000,
